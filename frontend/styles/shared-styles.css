@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+}
+
+.contact-grid {
+  flex: 2;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 5px;
+}
