@@ -1,4 +1,4 @@
-package com.example.springvaadinexample.infrastructure.frontend;
+package com.example.springvaadinexample.infrastructure.ui.pages.list;
 
 import com.example.springvaadinexample.domain.models.Contact;
 import com.vaadin.flow.component.grid.Grid;

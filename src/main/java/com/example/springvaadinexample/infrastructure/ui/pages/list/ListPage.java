@@ -1,11 +1,11 @@
-package com.example.springvaadinexample.infrastructure.frontend;
+package com.example.springvaadinexample.infrastructure.ui.pages.list;
 
 import com.example.springvaadinexample.domain.models.Contact;
 import com.example.springvaadinexample.domain.usecases.ContactsService;
-import com.example.springvaadinexample.infrastructure.frontend.ContactFormComponent.CloseEvent;
-import com.example.springvaadinexample.infrastructure.frontend.ContactFormComponent.DeleteEvent;
+import com.example.springvaadinexample.infrastructure.ui.pages.list.ContactFormComponent.CloseEvent;
+import com.example.springvaadinexample.infrastructure.ui.pages.list.ContactFormComponent.DeleteEvent;
+import com.example.springvaadinexample.infrastructure.ui.MainLayout;
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -13,17 +13,16 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import java.util.List;
 
-@Route(value = "")
+@Route(value = "", layout = MainLayout.class)
 @PageTitle("Contacts | Vaadin CRM")
-@CssImport("./styles/shared-styles.css")
-public class MainView extends VerticalLayout {
+public class ListPage extends VerticalLayout {
 
   private final ContactsService contactsService;
   private final GridComponent gridComponent;
   private final ContactFormComponent contactFormComponent;
   private List<Contact> contacts;
 
-  public MainView(ContactsService contactsService) {
+  public ListPage(ContactsService contactsService) {
     this.contactsService = contactsService;
 
     addClassName("list-view");

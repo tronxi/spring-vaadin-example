@@ -1,4 +1,4 @@
-package com.example.springvaadinexample.infrastructure.frontend;
+package com.example.springvaadinexample.infrastructure.ui.pages.list;
 
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
